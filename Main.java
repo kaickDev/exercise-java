@@ -3,18 +3,20 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("enter your name: ");
-        String name = input.nextLine();
+        System.out.println("enter a number: ");
+        int num = input.nextInt();
 
-        System.out.print("enter your age: ");
-        int age = input.nextInt();
+        if (num < 0){
+           System.out.println("your number is negative");
+        }
+        else if (num > 0){
 
-System.out.print("hello, " + name );
+            System.out.println("your number is positive");
+            if (num == 0){
 
-System.out.print("!");
+                System.out.println("your number is zero");
 
-System.out.print(" your age is " + age);
-
+            }
+        }
     }
 }
-
