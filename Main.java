@@ -6,7 +6,7 @@ public class Main {
         System.out.print("enter your name: ");
         String name = input.nextLine();
 
-        System.out.print("enter your sge: ");
+        System.out.print("enter your age: ");
         int age = input.nextInt();
 
 System.out.print("hello, " + name );
@@ -17,3 +17,4 @@ System.out.print(" your age is " + age);
 
     }
 }
+
