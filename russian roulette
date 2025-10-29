@@ -1,0 +1,30 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+
+        System.out.println("Let's play Russian roulette 🎯");
+
+        int bulletposition = random.nextInt(6);
+        int currentchamber = 0;
+        boolean alive = true;
+
+        while (alive && currentchamber < 6) {
+            System.out.println("\nPress ENTER to pull the trigger");
+            input.nextLine();
+
+            if ( currentchamber == bulletposition) {
+                System.out.print("You died,");
+                alive = false;
+            } else {
+                System.out.println("Click!  wow, You're still alive..");
+                currentchamber ++;
+            }
+        }
+
+        System.out.print(" Game over.");
+    }
+}
